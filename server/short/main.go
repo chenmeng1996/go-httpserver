@@ -12,6 +12,7 @@ func main() {
 	}
 	fd, err := net.ListenTCP("tcp", tcpAddr)
 	for {
+		// 监听6666端口上的连接
 		conn, err := fd.Accept()
 		if err != nil {
 			continue

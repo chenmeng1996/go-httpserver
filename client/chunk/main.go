@@ -20,6 +20,7 @@ func main() {
 			continue
 		}
 		s += string(buf[:n])
+		//time.Sleep(2 * time.Second)
 		fmt.Print(s)
 		s = ""
 	}
